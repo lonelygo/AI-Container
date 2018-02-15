@@ -24,6 +24,7 @@ We collected huge high quality container door picture from KAOCT, Guangzhou port
 
 ### 识别模型 Model
 系统可按照需求和应用场景自动适配识别模型，在移动端需要快速定位及识别的我们采用SSD单层模型做区域识别，基于多层模型做文本识别。在后端或者以拍照方式采集数据的移动端，我们采用精度更高的多层模型识别，同时在识别前用opencv对图片做增强处理，进一步提高识别率。
+
 System can auto adapt suitable model to run graph according to environment and real usage. In mobile side real time detection requires high FPS then it will run SSD trained model, if requires high accuracy then it will run 2-layer trained model with opencv enhanced.
 
 ### 数据扩展 Data Extension
