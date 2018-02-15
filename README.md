@@ -16,6 +16,8 @@
 我们从高雄港，广州港，上海港，长滩港采集了海量的高质量集装箱箱号图片作为训练集，分别采用了四种不同类别的算法有针对性地对图片做处理。此开放版本仅标注了集装箱箱号区域与箱尺寸区域。大约30%作为验证集，70%多张作为训练集。
 此版本数据集综合考虑了各种集装箱规范，形状，尺寸，充分采样不同码头和港口的数据。相比于车牌识别，集装箱箱号的识别难度大，主要原因有：列印不规范，箱体破损，箱体被涂抹，逆光，暗光，角度限制，柜体层叠等等。我们的数据集充分考虑各个方面的因素，尽可能地对各种条件下的集装箱做照片采集。目前我们的采集工作还在进行当中。
 
+We collected huge high quality container door picture from KAOCT, Guangzhou port, Shanghai port, Long Beach Port. This version only labeled CTN and size area, 70% images used for train dataset, 30% for test dataset.
+
 ![20180103_101246](https://github.com/zdnet/AI-Container/blob/master/pic/combine.jpg)
 
 >  目前只采集了横印型箱号的图片，对竖印型箱号暂时还不支持
