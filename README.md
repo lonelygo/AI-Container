@@ -30,8 +30,12 @@ System can auto adapt suitable model to run graph according to environment and r
 ### 数据扩展 Data Extension
 为了进一步提升识别率，我们对这些海量图片进一步做了增强处理，主要为角度旋转，加噪点，颜色偏移等，大约拓展出一倍的照片加入到训练集中。
 
+To improve the accuracy, we enahced the images such as angle rotate, add noise, color change, etc. extend at least x2 data to add into train dataset.
+
 ### 区域识别模型训练 Train Model
 对区域识别做大约20个epoch的训练，目前区域识别率对角度比较好可以达到99%以上，对角度比较差的图片也有大约90%以上的准确率，之后会更新mAP数据。
+
+For text area detection we have run 20+ epoch train, for good angle view we can reach 99%+ accuracy, for bad angle we also can reach 90%+ accuracy so far, will release out mAP data in next.
 
 > 对箱号有涂抹的识别
 ![2018-02-14_09_57_01-TensorBoard](https://github.com/zdnet/AI-Container/blob/master/pic/tf.png)
