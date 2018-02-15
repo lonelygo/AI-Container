@@ -1,15 +1,16 @@
-# AI-Container
+# AI-Container - Container Automation Detection System base on Tensorflow 
 
-## 第一阶段：基于TF的集装箱自动识别系统 (Step 1： 箱号及size区域识别) - In-Progress
-> 第二阶段：基于TF的集装箱自动识别系统 (Step 2： 箱号及size文本识别) - TBC
-
-> 第三阶段：基于TF的集装箱自动识别系统 (Step 3： 性能精度优化及移动端+树莓派集成) - TBC
-
-> 第四阶段：基于TF的集装箱自动识别系统 (Step 4： 冻柜等特殊柜体智能检测应用) - TBC
-
-> 第五阶段：基于TF的集装箱自动识别系统 (Step 5： 冻柜等特殊柜体智能检测应用) - TBC
-
+## 第一阶段：基于TF的集装箱自动识别系统 (Step 1： 箱号及size区域识别 container number & size position area detection) - In-Progress
 > [第一阶段测试结果](https://github.com/zdnet/AI-Container/wiki/Test-Case) 
+
+* 第二阶段：基于TF的集装箱自动识别系统 (Step 2： 箱号及size文本识别 container number & size OCR recognition) - TBC
+
+* 第三阶段：基于TF的集装箱自动识别系统 (Step 3： 性能精度优化及移动端+树莓派集成 Performance tuning & mobile integration) - TBC
+
+* 第四阶段：基于TF的集装箱自动识别系统 (Step 4： 冻柜等特殊柜体智能检测应用 Reefer container status mornitoring) - TBC
+
+* 第五阶段：基于TF的集装箱自动识别系统 (Step 5： IoT connection with Android-Things, Ali-Things) - TBC
+
 
 ### 数据集的制作
 我们从高雄港，广州港，上海港，长滩港采集了海量的高质量集装箱箱号图片作为训练集，分别采用了四种不同类别的算法有针对性地对图片做处理。此开放版本仅标注了集装箱箱号区域与箱尺寸区域。大约30%作为验证集，70%多张作为训练集。
