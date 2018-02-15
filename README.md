@@ -29,6 +29,7 @@
 ### 区域识别模型训练
 对区域识别做大约20个epoch的训练，目前区域识别率对角度比较好可以达到99%以上，对角度比较差的图片也有大约90%以上的准确率，之后会更新mAP数据。
 
+> 对箱号有涂抹的识别
 ![2018-02-14_09_57_01-TensorBoard](https://github.com/zdnet/AI-Container/blob/master/pic/tf.png)
 
 
