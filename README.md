@@ -1,7 +1,7 @@
 # AI-Container
 
 
-## 基于TF的集装箱箱号自动识别系统
+## 第一阶段：基于TF的集装箱箱号自动识别系统
 
 ### 数据集的制作
 我们从高雄港，广州港，上海港，长滩港采集了海量的高质量集装箱箱号图片作为训练集，分别采用了四种不同类别的算法有针对性地对图片做处理。此版本仅标注了集装箱箱号区域与箱尺寸区域。大约30%作为验证集，70%多张作为训练集。
@@ -29,6 +29,6 @@
 ### 移动端移植
 Android端采用pb压缩后的固化模型，ios端采用基于MLCore的转换后的模型。在保持较高帧率的条件下做高精度识别
 
-![317598833529426995](https://github.com/zdnet/AI-Container/blob/master/pic/android.jpg)
+<img src="https://github.com/zdnet/AI-Container/blob/master/pic/android.jpg" width="200px" />
 
->  关于移动端移植，可参考我另外一篇相关文章
+>  关于移动端移植，可参考我另外一篇相关文章（TBC）
