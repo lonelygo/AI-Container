@@ -1,7 +1,7 @@
 # AI-Container
 
 ## 第一阶段：基于TF的集装箱箱号自动识别系统 (Step 1： 箱号及size区域识别)
-> [测试结果](https://github.com/zdnet/AI-Container/wiki/Test-Case) 
+> [第一阶段测试结果](https://github.com/zdnet/AI-Container/wiki/Test-Case) 
 
 ### 数据集的制作
 我们从高雄港，广州港，上海港，长滩港采集了海量的高质量集装箱箱号图片作为训练集，分别采用了四种不同类别的算法有针对性地对图片做处理。此版本仅标注了集装箱箱号区域与箱尺寸区域。大约30%作为验证集，70%多张作为训练集。
