@@ -9,13 +9,13 @@
 
 * 第四阶段：基于TF的集装箱自动识别系统 (Step 4： 冻柜等特殊柜体智能检测应用 Reefer container status mornitoring) - TBC
 
-* 第五阶段：基于TF的集装箱自动识别系统 (Step 5： 柜体破损自动检测 Container body damage area automation detection) - TBC
+* 第五阶段：基于TF的集装箱自动识别系统 (Step 5： 柜体破损自动检测，危险品柜自动检测 Container body damage area automation detection, danger container detection) - TBC
 
 * 第六阶段：基于TF的集装箱自动识别系统 (Step 6： IoT connection with Android-Things, Ali-Things) - TBC
 
 
 ### 数据集的制作 Dataset preparing
-我们从高雄港，广州港，上海港，长滩港采集了海量的高质量集装箱箱号图片作为训练集，分别采用了四种不同类别的算法有针对性地对图片做处理。此开放版本仅标注了集装箱箱号区域与箱尺寸区域。大约30%作为验证集，70%多张作为训练集。
+我们从高雄港，广州港，上海港，长滩港采集了海量的高质量集装箱箱号图片作为训练集，分别采用了四种不同类别的算法有针对性地对图片做处理。此开放版本仅标注了集装箱箱号区域与箱尺寸区域。大约30%作为验证集，70%作为训练集。
 此版本数据集综合考虑了各种集装箱规范，形状，尺寸，充分采样不同码头和港口的数据。相比于车牌识别，集装箱箱号的识别难度大，主要原因有：列印不规范，箱体破损，箱体被涂抹，逆光，暗光，角度限制，柜体层叠等等。我们的数据集充分考虑各个方面的因素，尽可能地对各种条件下的集装箱做照片采集。目前我们的采集工作还在进行当中。
 
 We collected huge high quality container door picture from KAOCT, Guangzhou port, Shanghai port, Long Beach Port. This version only labeled CTN and size area, 70% images used for train dataset, 30% for test dataset.
