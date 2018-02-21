@@ -1,7 +1,7 @@
 # AI-Container - Container Automation Detection System base on Tensorflow 
 
-## 第一阶段：基于TF的集装箱自动识别系统 (Step 1： 箱号及size区域识别 container number & size position area detection) - In-Progress
-> [第一阶段测试结果](https://github.com/zdnet/AI-Container/wiki/Test-Case) 
+* 第一阶段：基于TF的集装箱自动识别系统 (Step 1： 箱号及size区域识别 container number & size position area detection) - In-Progress
+  > [第一阶段测试结果](https://github.com/zdnet/AI-Container/wiki/Test-Case) 
 
 * 第二阶段：基于TF的集装箱自动识别系统 (Step 2： 箱号及size文本识别 container number & size OCR recognition) - TBC
 
@@ -25,7 +25,7 @@ We collected huge high quality container door picture from KAOCT, Guangzhou port
 ### 识别模型 Model
 系统可按照需求和应用场景自动适配识别模型，在移动端需要快速定位及识别的我们采用SSD单层模型做区域识别，基于多层模型做文本识别。在后端或者以拍照方式采集数据的移动端，我们采用精度更高的多层模型识别，同时在识别前用opencv对图片做增强处理，进一步提高识别率。
 
-System can auto adapt suitable model to run graph according to environment and real usage. In mobile side real time detection requires high FPS then it will run SSD trained model, if requires high accuracy then it will run 2-layer trained model with opencv enhanced.
+System can auto adapt suitable model to run graph according to environment and real usage. In mobile side real time detection requires high FPS then it will run SSD trained model, if requires high accuracy then it will run 2-stages trained model with opencv enhanced.
 
 ### 数据扩展 Data Extension
 为了进一步提升识别率，我们对这些海量图片进一步做了增强处理，主要为角度旋转，加噪点，颜色偏移等，大约拓展出一倍的照片加入到训练集中。
@@ -46,7 +46,7 @@ For text area detection we have run 20+ epoch train, for good angle view we can 
 ### 移动端移植 Mobile integration
 Android端采用pb压缩后的固化模型，ios端采用基于MLCore的转换后的模型。在保持较高帧率的条件下做高精度识别
 
-<img src="https://github.com/zdnet/AI-Container/blob/master/pic/android.jpg" width="200px" />
+<img src="https://github.com/zdnet/AI-Container/blob/master/pic/android.jpg" width="300px" />
 
 >  关于移动端移植，可参考我另外一篇相关文章（TBC）
 
