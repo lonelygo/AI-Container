@@ -9,7 +9,7 @@
 
 * 第四阶段：基于TF的集装箱自动识别系统 (Step 4： 冻柜等特殊柜体智能检测应用 Reefer container status mornitoring) - TBC
 
-* 第五阶段：基于TF的集装箱自动识别系统 (Step 5： 柜体破损自动检测 Container body damage automation detection) - TBC
+* 第五阶段：基于TF的集装箱自动识别系统 (Step 5： 柜体破损自动检测 Container body damage area automation detection) - TBC
 
 * 第六阶段：基于TF的集装箱自动识别系统 (Step 6： IoT connection with Android-Things, Ali-Things) - TBC
 
@@ -41,6 +41,7 @@ For text area detection we have run 20+ epoch train, for good angle view we can 
 
 > 对箱号有涂抹的识别 (区域识别)
 ![2018-02-14_09_57_01-TensorBoard](https://github.com/zdnet/AI-Container/blob/master/pic/tf.png)
+
 > More result: https://github.com/zdnet/AI-Container/wiki/Test-Case
 
 ### 文本识别模型训练 OCR recognize train
