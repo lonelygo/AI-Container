@@ -9,7 +9,9 @@
 
 * 第四阶段：基于TF的集装箱自动识别系统 (Step 4： 冻柜等特殊柜体智能检测应用 Reefer container status mornitoring) - TBC
 
-* 第五阶段：基于TF的集装箱自动识别系统 (Step 5： IoT connection with Android-Things, Ali-Things) - TBC
+* 第五阶段：基于TF的集装箱自动识别系统 (Step 5： 柜体破损自动检测 Container body damage automation detection) - TBC
+
+* 第六阶段：基于TF的集装箱自动识别系统 (Step 6： IoT connection with Android-Things, Ali-Things) - TBC
 
 
 ### 数据集的制作 Dataset preparing
@@ -37,8 +39,9 @@ To improve the accuracy, we enahced the images such as angle rotate, add noise, 
 
 For text area detection we have run 20+ epoch train, for good angle view we can reach 99%+ accuracy, for bad angle we also can reach 90%+ accuracy so far, will release out mAP data in next.
 
-> 对箱号有涂抹的识别
+> 对箱号有涂抹的识别 (区域识别)
 ![2018-02-14_09_57_01-TensorBoard](https://github.com/zdnet/AI-Container/blob/master/pic/tf.png)
+> More result: https://github.com/zdnet/AI-Container/wiki/Test-Case
 
 ### 文本识别模型训练 OCR recognize train
 为了保证文本识别精度，特别是对箱号识别的准确度，我们制作了箱号字体生成器，对字体做3D变换。
