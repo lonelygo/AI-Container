@@ -65,7 +65,7 @@ For text area detection we have run 20+ epoch train, for good angle view we can 
 <img src="https://github.com/zdnet/AI-Container/blob/master/pic/BG1.png" width="600px" />
 
 ### 移动端移植 Mobile integration
-Android端采用pb压缩后的固化模型，ios端采用基于MLCore的转换后的模型。在保持较高帧率的条件下做高精度识别
+Android端采用pb压缩后的固化模型，ios端采用基于CoreML的转换后的模型。在保持较高帧率的条件下做高精度识别
 
 <img src="https://github.com/zdnet/AI-Container/blob/master/pic/android.jpg" width="300px" />
 
