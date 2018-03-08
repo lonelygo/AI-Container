@@ -47,6 +47,11 @@ For text area detection we have run 20+ epoch train, for good angle view we can 
 ### 文本识别模型训练 OCR recognize train
 为了保证文本识别精度，特别是对箱号识别的准确度，我们制作了箱号字体生成器，对字体做3D变换。
 
+> 生成模拟数据并做3D变换
+
+![Output sample](https://github.com/zdnet/AI-Container/blob/master/pic/3D.gif)
+
+
 > 箱号自动截取 automation CTN region crop
 
 <img src="https://github.com/zdnet/AI-Container/blob/master/pic/id.png" width="600px" />
