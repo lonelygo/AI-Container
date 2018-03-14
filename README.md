@@ -47,7 +47,9 @@ For text area detection we have run 20+ epoch train, for good angle view we can 
 ### 文本识别模型训练 OCR recognize train
 为了保证文本识别精度，特别是对箱号识别的准确度，我们制作了箱号字体生成器，对字体做3D变换。
 
-> 生成模拟数据并做3D变换
+To improve the accuracy, especially the container number in door recognize accuracy, we did a container id/size generator, add perspective transform for each image, and then paste font in background image to simulate real picture.
+
+> 生成模拟数据并做3D变换 Generate dummy dataset and apply perspective transform
 
 ![Output sample](https://github.com/zdnet/AI-Container/blob/master/pic/3D.gif)
 
@@ -60,14 +62,24 @@ For text area detection we have run 20+ epoch train, for good angle view we can 
 
 <img src="https://github.com/zdnet/AI-Container/blob/master/pic/size.png" width="600px" />
 
-> 背景制作
+> 背景制作 Background generator
 
 <img src="https://github.com/zdnet/AI-Container/blob/master/pic/BG1.png" width="600px" />
 
-### 移动端移植 Mobile integration
-Android端采用pb压缩后的固化模型，ios端采用基于CoreML的转换后的模型。在保持较高帧率的条件下做高精度识别
+文本识别模型我们采用了CRNN，虽然箱号和size是定长文本，但是经过比较后我们还是选择了CRNN作为识别的底层框架，第一个版本的识别准确度大约在85%左右，对有些易错字符如 Q,O | U,V | P,R 我们还会继续训练和处理。训练集大约有10多万的数据量，验证集有3万的数据量。对于不同集装箱字体我们还会继续有针对性的训练。
 
-<img src="https://github.com/zdnet/AI-Container/blob/master/pic/android.jpg" width="300px" />
+We used CRNN as the text recognition model after compared with CNN, the first version can reach 85% accuracy, to some easy-error char like Q,O | U,V | P,R we will continue to improve the algorithm. Train dataset have 10w+ records, eval dataset have 3w+ records. For differece container print font we will continue collect data to improve the accuracy.
+
+### 移动端移植 Mobile integration
+Android端采用pb压缩后的固化模型，ios端采用基于CoreML的转换后的模型。在保持较高帧率的条件下做高精度识别。对于第一个版本我们在app里集成了3个模型：区域识别，箱号识别和size识别，这样会导致我们的app很大，内存占用也多，之后我们会集成模型在一个model内。
+对于不同模型的移动端移植，其实在TF层面还需要做很多工作，比如op_kernel的配置添加，.so重新打包, input, output的验证等等。
+
+Android part we used frozen graph directly, iOS we used CoreML. To first version we integrated 3 models in app:region detection, container number recognize, size recognize. But it will make our app to a large size with high memory usage, in next we will combine 3 models in one model. 
+For differece model mobile migration, we did many study and reseach, such as op_kernel add and re-build, re-package .so, verify input/ouput and so on. 
+
+> 移动端移植 Mobile migration
+
+<img src="https://github.com/zdnet/AI-Container/blob/master/pic/mobile_capture.jpg" width="300px" />
 
 >  关于移动端移植，可参考我另外一篇相关文章（TBC）
 
