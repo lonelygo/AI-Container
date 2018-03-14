@@ -79,7 +79,7 @@ For differece model mobile migration, we did many study and reseach, such as op_
 
 > 移动端移植 Mobile migration
 
-<img src="https://github.com/zdnet/AI-Container/blob/master/pic/mobile_capture.jpg" width="300px" />
+<img src="https://github.com/zdnet/AI-Container/blob/master/pic/mobile_capture.jpg" width="800px" />
 
 >  关于移动端移植，可参考我另外一篇相关文章（TBC）
 
