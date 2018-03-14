@@ -64,7 +64,7 @@ To improve the accuracy, especially the container number in door recognize accur
 
 > 背景制作 Background generator
 
-<img src="https://github.com/zdnet/AI-Container/blob/master/pic/BG1.png" width="600px" />
+<img src="https://github.com/zdnet/AI-Container/blob/master/pic/BG1.png" width="300px" />
 
 文本识别模型我们采用了CRNN，虽然箱号和size是定长文本，但是经过比较后我们还是选择了CRNN作为识别的底层框架，第一个版本的识别准确度大约在85%左右，对有些易错字符如 Q,O | U,V | P,R 我们还会继续训练和处理。训练集大约有10多万的数据量，验证集有3万的数据量。对于不同集装箱字体我们还会继续有针对性的训练。
 
