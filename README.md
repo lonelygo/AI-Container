@@ -1,10 +1,11 @@
 # AI-Container - Container Automation Detection System base on Tensorflow 
 
 * 第一阶段：基于TF的集装箱自动识别系统 (Step 1： 箱号及size区域识别 container number & size position area detection) - Completed
-  > [第一阶段测试结果](https://github.com/zdnet/AI-Container/wiki/Test-Case) 
+  > [第一阶段测试结果 1st Phase testing result](https://github.com/zdnet/AI-Container/wiki/Test-Case) 
 
 * 第二阶段：基于TF的集装箱自动识别系统 (Step 2： 箱号及size文本识别 container number & size OCR recognition) - Completed 90%
-  > [第二阶段测试结果](https://github.com/zdnet/AI-Container/wiki/ctn_id_test_model) 
+  > [第二阶段测试结果 2nd Phase testing result](https://github.com/zdnet/AI-Container/wiki/ctn_id_test_model) 
+  > Python backend service will be released soon
 
 * 第三阶段：基于TF的集装箱自动识别系统 (Step 3： 性能精度优化及移动端+树莓派集成 Performance tuning & mobile integration) - TBC
 
