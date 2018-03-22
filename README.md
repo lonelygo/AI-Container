@@ -30,7 +30,7 @@
 
 We collected huge high quality container door picture from KAOCT, Guangzhou port, Shanghai port, Long Beach Port. This version only labeled CTN and size area, 70% images used for train dataset, 30% for test dataset.
 
-![20180103_101246](https://github.com/zdnet/AI-Container/blob/master/pic/labeling.png)
+<img src="https://github.com/zdnet/AI-Container/blob/master/pic/labeling.png" width="600px" />
 
 >  目前只采集了横印型箱号的图片，对竖印型箱号暂时还不支持。 Only support horizontal printed number in this version.
 
