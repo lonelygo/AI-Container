@@ -30,7 +30,7 @@ We collected huge high quality container door picture from KAOCT, Guangzhou port
 
 ![20180103_101246](https://github.com/zdnet/AI-Container/blob/master/pic/combine.jpg)
 
->  目前只采集了横印型箱号的图片，对竖印型箱号暂时还不支持。 Only support horizontal CTN in this version.
+>  目前只采集了横印型箱号的图片，对竖印型箱号暂时还不支持。 Only support horizontal printed number in this version.
 
 ### 识别模型 Model
 系统可按照需求和应用场景自动适配识别模型，在移动端需要快速定位及识别的我们采用SSD单层模型做区域识别，基于多层模型做文本识别。在后端或者以拍照方式采集数据的移动端，我们采用精度更高的多层模型识别，同时在识别前用opencv对图片做增强处理，进一步提高识别率。
@@ -40,7 +40,7 @@ System can auto adapt suitable model to run graph according to environment and r
 ### 数据扩展 Data Extension
 为了进一步提升识别率，我们对这些海量图片进一步做了增强处理，主要为角度旋转，加噪点，颜色偏移等，大约拓展出一倍的照片加入到训练集中。
 
-To improve the accuracy, we enahced the images such as angle rotate, add noise, color change, etc. extend at least x2 data to add into train dataset.
+To improve the accuracy, we enahced the images such as angle rotate, add noise, color range change, etc. We extend at least x2 data and  added into train dataset.
 
 ### 区域识别模型训练 Train Model
 对区域识别做大约20个epoch的训练，目前区域识别率对角度比较好可以达到99%以上，对角度比较差的图片也有大约90%以上的准确率，之后会更新mAP数据。
