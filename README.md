@@ -9,11 +9,11 @@
 
   > [第二阶段测试结果 2nd Phase testing result](https://github.com/zdnet/AI-Container/wiki/ctn_id_test_model) 
   
-  > [Python 后端测试服务 Python backend testing](http://123.207.33.179:8000/container/index)
+  > [Python 后端测试服务 Python backend testing](http://123.207.33.179:8000/container/index) - Last updated: 22/Mar 2018 by cody-chen-jf
 
 * 第三阶段：基于TF的集装箱自动识别系统 (Step 3： 性能精度优化及移动端+树莓派集成 Performance tuning & mobile integration) - In-Progress
 
-  > 第三阶段测试结果 3rd Phase testing result
+  > 第三阶段测试结果 3rd Phase testing result - by JcmeLs
 
 * 第四阶段：基于TF的集装箱自动识别系统 (Step 4： 冻柜等特殊柜体智能检测应用 Reefer container status mornitoring) - TBC
 
