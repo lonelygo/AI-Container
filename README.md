@@ -1,4 +1,4 @@
-# AI-Container - Container Automation Detection System base on Tensorflow 
+# AI Container 集装箱智能检测及识别系统 - Container automation detection system base on deep learning
 
 >  该项目致力于解决集装箱箱号识别在移动端的解决方案. The main purpose of this project is focus on mobile solution for container OCR & detection
 
