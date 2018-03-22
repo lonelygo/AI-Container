@@ -2,6 +2,8 @@
 
 >  该项目致力于解决集装箱箱号识别在移动端的解决方案. The main purpose of this project is focus on mobile solution for container OCR & detection
 
+<img src="https://github.com/zdnet/AI-Container/blob/master/pic/port.jpg" width="600px" />
+
 * 第一阶段：基于TF的集装箱自动识别系统 (Step 1： 箱号及size区域识别 container number & size position area detection) - Completed
   > [第一阶段测试结果 1st Phase testing result](https://github.com/zdnet/AI-Container/wiki/Test-Case) 
 
@@ -28,7 +30,7 @@
 
 We collected huge high quality container door picture from KAOCT, Guangzhou port, Shanghai port, Long Beach Port. This version only labeled CTN and size area, 70% images used for train dataset, 30% for test dataset.
 
-![20180103_101246](https://github.com/zdnet/AI-Container/blob/master/pic/combine.jpg)
+![20180103_101246](https://github.com/zdnet/AI-Container/blob/master/pic/labeling.png)
 
 >  目前只采集了横印型箱号的图片，对竖印型箱号暂时还不支持。 Only support horizontal printed number in this version.
 
