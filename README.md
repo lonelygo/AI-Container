@@ -8,6 +8,8 @@
 * 第一阶段：基于TF的集装箱自动识别系统 (Step 1： 箱号及size区域识别 container number & size position area detection) - Completed
   > [第一阶段测试结果 1st Phase testing result](https://github.com/zdnet/AI-Container/wiki/Test-Case) 
 
+  > 目前还在加大数据集，下个批次的数据集加入了柜体侧面的照片
+
 * 第二阶段：基于TF的集装箱自动识别系统 (Step 2： 箱号及size文本识别 container number & size OCR recognition) - Completed 90%
 
   > [第二阶段测试结果 2nd Phase testing result](https://github.com/zdnet/AI-Container/wiki/ctn_id_test_model) 
