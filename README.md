@@ -24,6 +24,8 @@
   
   > [实时视频检测](https://github.com/zdnet/AI-Container/blob/master/pic/gm6r4-dyrg2.gif)
 
+  > [Video](http://v.youku.com/v_show/id_XMzU1MjM0NDQ0MA)
+
 * 第四阶段：基于TF的集装箱自动识别系统 (Step 4： 冻柜等特殊柜体智能检测应用 Reefer container status mornitoring) - TBC
 
 * 第五阶段：基于TF的集装箱自动识别系统 (Step 5： 柜体破损自动检测，危险品柜自动检测 Container body damage area automation detection, danger container detection) - TBC
