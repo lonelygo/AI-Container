@@ -21,6 +21,8 @@
 * 第三阶段：基于TF的集装箱自动识别系统 (Step 3： 性能精度优化及移动端+树莓派集成 Performance tuning & mobile integration) - In-Progress
 
   > 第三阶段测试结果 3rd Phase testing result - by JcmeLs
+  
+  > [实时视频检测](https://github.com/zdnet/AI-Container/blob/master/pic/gm6r4-dyrg2.gif)
 
 * 第四阶段：基于TF的集装箱自动识别系统 (Step 4： 冻柜等特殊柜体智能检测应用 Reefer container status mornitoring) - TBC
 
