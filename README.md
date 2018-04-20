@@ -72,6 +72,8 @@ For text area detection we have run 20+ epoch train, for good angle view we can 
 ### 文本识别模型训练 OCR recognize train
 为了保证文本识别精度，特别是对箱号识别的准确度，我们制作了箱号字体生成器，对字体做3D变换。
 
+> 箱尺寸的OCR识别目前模型还存在问题，会在后续过程中调整
+
 To improve the accuracy, especially the container number in door recognize accuracy, we did a container id/size generator, add perspective transform for each image, and then paste font in background image to simulate real picture.
 
 > 生成模拟数据并做3D变换 Generate dummy dataset and apply perspective transform
