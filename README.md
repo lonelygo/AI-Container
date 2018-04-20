@@ -22,7 +22,7 @@
 
   > 第三阶段测试结果 3rd Phase testing result - by JcmeLs
   
-  > [实时视频检测](https://github.com/zdnet/AI-Container/blob/master/pic/gm6r4-dyrg2.gif)
+  > [实时视频检测](https://github.com/zdnet/AI-Container/blob/master/pic/gm6r4-dyrg2.gif) Better to download and put it in browser to view
 
   > [Video](http://v.youku.com/v_show/id_XMzU1MjM0NDQ0MA)
 
