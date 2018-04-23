@@ -8,8 +8,6 @@
 * 第一阶段：基于TF的集装箱自动识别系统 (Step 1： 箱号及size区域识别 container number & size position area detection) - Completed
   > [第一阶段测试结果 1st Phase testing result](https://github.com/zdnet/AI-Container/wiki/Test-Case) 
   
-  > [第一阶段测试结果 柜体侧面区域识别](https://github.com/zdnet/AI-Container/wiki/Test-Case-2) 
-  
   > 目前还在加大数据集，下个批次的数据集将加入竖印的照片
 
 * 第二阶段：基于TF的集装箱自动识别系统 (Step 2： 箱号及size文本识别 container number & size OCR recognition) - Completed 90%
@@ -21,6 +19,10 @@
 * 第三阶段：基于TF的集装箱自动识别系统 (Step 3： 性能精度优化及移动端+树莓派集成 Performance tuning & mobile integration) - In-Progress
 
   > 第三阶段测试结果 3rd Phase testing result - by JcmeLs
+  
+  > [实时视频检测](https://github.com/zdnet/AI-Container/blob/master/pic/gm6r4-dyrg2.gif) Better to download and put it in browser to view
+
+  > [Video](http://v.youku.com/v_show/id_XMzU1MjM0NDQ0MA)
 
 * 第四阶段：基于TF的集装箱自动识别系统 (Step 4： 冻柜等特殊柜体智能检测应用 Reefer container status mornitoring) - TBC
 
@@ -68,6 +70,8 @@ For text area detection we have run 20+ epoch train, for good angle view we can 
 ### 文本识别模型训练 OCR recognize train
 为了保证文本识别精度，特别是对箱号识别的准确度，我们制作了箱号字体生成器，对字体做3D变换。
 
+> 箱尺寸的OCR识别目前模型还存在问题，会在后续过程中调整
+
 To improve the accuracy, especially the container number in door recognize accuracy, we did a container id/size generator, add perspective transform for each image, and then paste font in background image to simulate real picture.
 
 > 生成模拟数据并做3D变换 Generate dummy dataset and apply perspective transform
@@ -100,7 +104,7 @@ For differece model mobile migration, we did many study and reseach, such as op_
 
 > 移动端移植 Mobile migration
 
-<img src="https://github.com/zdnet/AI-Container/blob/master/pic/mobile_capture.jpg" width="800px" />
+<img src="https://github.com/zdnet/AI-Container/blob/master/pic/mobile_capture.jpg" width="500px" />
 
 >  关于移动端移植，可参考我另外一篇相关文章（TBC）
 
